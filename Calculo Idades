@@ -1,0 +1,25 @@
+Var
+// Seção de Declarações das variáveis 
+idade: inteiro
+x: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+ x <- 0
+ idade <- 0
+ 
+ enquanto idade <> 999 faca
+
+
+    escreval("Qual sua idade ? [Digite 999 para sair]")
+    leia (idade)
+    
+    se (idade <> 999) entao
+      x <- x + 1
+    fimse
+    
+ fimenquanto
+
+ escreval("Execuções = " , x)
+
+Fimalgoritmo
