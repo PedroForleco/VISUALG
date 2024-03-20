@@ -1,0 +1,121 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/03/2024
+Var
+numero: real
+resultado: inteiro
+resto:inteiro
+P1: real
+P2: real
+P3: real
+
+Inicio
+  escreval("Digite o número:")
+    leia (numero)
+
+     resultado <- (numero\16)
+     resto <- numero % 16
+
+   escreval("1 - ",resto, " QUOCIENTE = ",resultado)
+      P3 <- resto
+
+      se (resultado >= 16) entao
+      resto <- resultado%16
+      P2 <- resto
+
+   escreval ("2 - ",resto, " QUOCIENTE = ",resultado)
+      se (resultado >= 16) entao
+      resultado <- resultado\16
+      resto <- resultado%16
+
+   escreval ("3 - ",resto, " QUOCIENTE = ",resultado)
+      P1 <- RESTO
+      senao
+   escreval ("3X - ",resultado)
+      P1 <- RESULTADO
+        fimse
+      senao
+      P2 <- RESULTADO
+
+      fimse
+
+      escreval ("3 - ",resto, " QUOCIENTE = ",resultado)
+      P1 <- RESTO
+
+// conversão do resultado final
+
+  se(P1 < 10) entao
+    escreva(P1)
+      senao
+  se(P1 = 10) entao
+    escreva("A")
+    FIMSE
+  se(P1 = 11) entao
+    escreva("B")
+    FIMSE
+  se(P1 = 12) entao
+    escreva("C")
+    FIMSE
+  se(P1 = 13) entao
+    escreva("D")
+    FIMSE
+  se(P1 = 14) entao
+    escreva("E")
+    FIMSE
+  se(P1 = 15) entao
+    escreva("F")
+     FIMSE
+     FIMSE
+
+      SE(P2 < 10) ENTAO
+        ESCREVA(P2)
+      SENAO
+         SE(P2 = 10) ENTAO
+          ESCREVA("A")
+         FIMSE
+         SE(P2 = 11) ENTAO
+          ESCREVA("B")
+         FIMSE
+         SE(P2 = 12) ENTAO
+          ESCREVA("C")
+         FIMSE
+         SE(P2 = 13) ENTAO
+          ESCREVA("D")
+         FIMSE
+         SE(P2 = 14) ENTAO
+          ESCREVA("E")
+         FIMSE
+         SE(P2 = 15) ENTAO
+          ESCREVA("F")
+         FIMSE
+      FIMSE
+
+      SE(P3 < 10) ENTAO
+        ESCREVA(P3)
+      SENAO
+         SE(P3 = 10) ENTAO
+          ESCREVA("A")
+         FIMSE
+         SE(P3 = 11) ENTAO
+          ESCREVA("B")
+         FIMSE
+         SE(P3 = 12) ENTAO
+          ESCREVA("C")
+         FIMSE
+         SE(P3 = 13) ENTAO
+          ESCREVA("D")
+         FIMSE
+         SE(P3 = 14) ENTAO
+          ESCREVA("E")
+         FIMSE
+         SE(P3 = 15) ENTAO
+          ESCREVA("F")
+         FIMSE
+      FIMSE
+
+
+
+Fimalgoritmo
