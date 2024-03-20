@@ -1,0 +1,22 @@
+Var
+// Seção de Declarações das variáveis 
+   x: inteiro
+   numero_final: inteiro
+
+Inicio
+  ESCREVA("Informe qual será o número/limite do seu laço de repetição: ")
+  LEIA(numero_final)
+
+ para x de 1 ate numero_final faca
+  escreva("Número ", x)
+
+  se(x % 2 = 0) entao
+  escreval(" - PAR")
+  senao
+  escreval(" - ÍMPAR")
+  fimse
+  fimpara
+
+
+
+Fimalgoritmo
