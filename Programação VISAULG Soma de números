@@ -1,0 +1,17 @@
+Var
+// Seção de Declarações das variáveis 
+  continua: caractere
+  x: inteiro
+
+  
+Inicio
+  continua <- "sim"
+  x <- 1
+  ENQUANTO continua = "sim" FACA
+    ESCREVAL("Número = " , x)
+    X <- X + 1
+    ESCREVAL("Deseja digitar mais um número ? [sim ou não]")
+    LEIA(continua)
+  FIMENQUANTO
+
+Fimalgoritmo
