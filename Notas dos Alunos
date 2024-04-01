@@ -1,0 +1,59 @@
+Var
+// Seção de Declarações das variáveis
+  nomes: vetor[1..5] de caractere
+  notas: vetor[1..5,1..3] de real
+  quantidade: inteiro
+  x, y : inteiro
+  resposta: inteiro
+  soma, media: real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   limpatela
+
+   ESCREVAL("|----------------------------------------------------|")
+   ESCREVAL("|                                                    |")
+   ESCREVAL("|         SISTEMA DE NOTAS DO COLÉGIO X              |")
+   ESCREVAL("|                                                    |")
+   ESCREVAL("|----------------------------------------------------|")
+   ESCREVAL("")
+   ESCREVAL("INFORME O NÚMERO DE ALUNOS: ")
+   LEIA(quantidade)
+   ESCREVAL("")
+
+   PARA x de 1 ate quantidade FACA
+     //ESCREVAL(" ALUNO:  ", x)
+     LIMPATELA
+     ESCREVAL("Qual o nome do [", x, " ]º aluno ?")
+     LEIA(nomes[x])
+
+       PARA y de 1 ate 3 FACA
+         ESCREVAL("")
+         ESCREVAL("ALUNO: ", x)
+         ESCREVAL("NOTA: ", y, "ª")
+         ESCREVAL("Qual é a nota ?")
+         LEIA(notas[x,y])
+       FIMPARA
+
+   FIMPARA
+
+   LIMPATELA
+
+   ESCREVAL("Informe um número de 1 até " , quantidade, " para exibir os dados")
+   LEIA(resposta)
+
+   ESCREVAL("")
+   ESCREVAL("RESULTADOS:-------------------")
+   ESCREVAL("Nome do aluno: " + nomes[resposta])
+   soma <- 0
+   PARA y de 1 ate 3 FACA
+        ESCREVAL(y,"ª nota: ", notas[resposta,y])
+        soma <- soma + notas[resposta,y])
+   FIMPARA
+
+   media <- soma / 3
+
+   ESCREVAL("")
+   ESCREVAL("Média = [",media,"]")
+
+
+FimAlgoritmo
